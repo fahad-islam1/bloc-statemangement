@@ -4,6 +4,7 @@ import 'package:counter_app/ui/switch_btn/switch_btn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'bloc/slider/slider_bloc.dart';
 import 'bloc/switch/switch_bloc.dart';
 
 void main() {
@@ -18,7 +19,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(providers: [
         BlocProvider(create: (_)=> CounterBloc(),
-    ),     BlocProvider(create: (_)=> SwitchBloc(),
+    ),
+      BlocProvider(create: (_)=> SwitchBloc(),
+    ),
+      BlocProvider(create: (_)=> SliderBloc(),
     ),
     ],     child:  MaterialApp(
       title: 'Flutter Demo',

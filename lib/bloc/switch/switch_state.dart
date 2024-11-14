@@ -13,5 +13,5 @@ part of 'switch_bloc.dart';
 
 // final class SwitchInitial extends SwitchState {
 //   @override
-//   List<Object> get props => [];
+//   List<Object> get proaps => [];
 // }
